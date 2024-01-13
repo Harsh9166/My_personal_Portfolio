@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9908dfc446.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="photo/logo.jpg" class="logo" alt="Developer logo image here">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#myskill">MySkill</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Harshvardhan</span><br>From Jaipur</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo/Harshvardhan.jpg" alt="User image here">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate and dedicated individual with a strong background in computer science. Skilled in full-stack web development, proficient in languages such as Python and JavaScript. Committed to delivering high-quality solutions and continuously expanding expertise in emerging technologies. Proven ability to work collaboratively in dynamic teams, with excellent problem-solving skills. Eager to contribute innovative ideas and drive impactful projects. A lifelong learner with a keen interest in staying ahead in the ever-evolving tech landscape.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>
+                                <span>2018</span><br>
+                                10th form RBSE Jaipur with 71%
+                            </li><br>
+                            <li>
+                                <span>2020</span><br>
+                                12th form RBSE Jaipur with 64%
+                            </li><br>
+                            <li>
+                                <span>2022</span><br>
+                                BCA-PART 1st (Bachelor of computer application) <br> from Rajasthan University Jaipur with 74%
+                            </li><br>
+                            <li>
+                                <span>2023</span><br>
+                                BCA-PART 2nd (Bachelor of computer application) <br> from Rajasthan University Jaipur with 63.10%
+                            </li><br>
+                            <li>
+                                <span>2024</span><br>
+                                BCA-PART 3rd Pursuing (Bachelor of computer application) <br> from Rajasthan University Jaipur 
+                            </li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>28 Oct 2023</span><br>Java certificate from WsCube Tech</li>
+                            <img src="photo/Java certificate.png" class="java-image" alt="Java Certificate image here"><br>
+                            <li><span>18 Oct 2023</span><br>Wordpress certificate from WsCube Tech</li>
+                            <img src="photo/WordPress.png" class="wordpress-image" alt="Wordpress Certificate image here">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Myskill-------------------- -->
+    <div id="myskill">
+        <div class="container">
+            <h1 class="sub-title">MySkill</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Technologies</h2>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul> 
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Technologies</h2>
+                    <ul>
+                        <li>Core Java</li>
+                        <li>JDBC</li>
+                        <li>Node.Js</li>
+                        <li>Express.Js</li>
+                    </ul> 
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Technologies</h2>
+                    <ul>
+                        <li>SQL</li>
+                        <li>MongoDB</li>
+                    </ul> 
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------project------------------ -->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Project</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="photo/countdowntimer.jpg" alt="countdowntimer image here">
+                    <div class="layer">
+                        <h3>Countdown Timer App</h3>
+                        <p>A countdown timer is a perfect timer that can be used to display the countdown to any special event, such as a deadline, birthday, or anniversary, on a website or blog. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="photo/TicTacToe.jpg" alt="quizapp image here">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os (Canadian or Irish English) is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O.  </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="photo/stone-paper-scissor.jpg" alt="todolist image here">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>Rock paper scissors (commonly scissors, paper, rock or stone in Australia and New Zealand) is an intransitive hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#project" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------Contact me---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>harshchandrawat707@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9166194765</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/harsh.chandrawat.92?mibextid=2JQ9oc" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/HarshCh91661947?t=jMGxd7EexKmqyURxZiwouQ&s=08" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/harsh_vardhan_singh_chandrawat?igsh=ZnJyem1kYWl4cTly" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harshvardhan-singh-chandrawat-432a2522a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Harshvardhan Resume.pdf" download class="btn btn2" >Download Resume</a>
+                </div>
+                <!-- -------------contact form-------------- -->
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> By Harsh 2024</p>
+        </div>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
